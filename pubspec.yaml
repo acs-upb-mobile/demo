@@ -239,11 +239,11 @@ flutter_intl:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/icons/acs_logo.png"
+  image_path: "assets/icons/demo_uni_logo.png"
 
 flutter_launcher_name:
   name: "StudentHub"
 
 flutter_native_splash:
-  image: assets/icons/acs_logo.png
+  image: assets/icons/demo_uni_logo.png
   color: "#ffffff"

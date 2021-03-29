@@ -187,7 +187,7 @@ class AppLoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return LoadingScreen(
       navigateAfterFuture: _setUpAndChooseStartScreen(context),
-      image: Image.asset('assets/icons/acs_logo.png'),
+      image: Image.asset('assets/icons/demo_uni_logo.png'),
       loaderColor: Theme.of(context).accentColor,
     );
   }

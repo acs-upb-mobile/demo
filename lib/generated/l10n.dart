@@ -2515,11 +2515,21 @@ class S {
     );
   }
 
-  /// `assets/images/acs_banner_en.png`
-  String get fileAcsBanner {
+  /// `StudentHub's Demo University`
+  String get stringUniversityName {
     return Intl.message(
-      'assets/images/acs_banner_en.png',
-      name: 'fileAcsBanner',
+      'StudentHub\'s Demo University',
+      name: 'stringUniversityName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `SHDU`
+  String get stringUniversityShortName {
+    return Intl.message(
+      'SHDU',
+      name: 'stringUniversityShortName',
       desc: '',
       args: [],
     );

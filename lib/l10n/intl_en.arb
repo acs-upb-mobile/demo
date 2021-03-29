@@ -264,6 +264,6 @@
   "stringForum": "cs.curs.pub.ro",
   "stringAnonymous": "Anonymous",
   "stringAnd": "and",
-
-  "fileAcsBanner": "assets/images/acs_banner_en.png"
+  "stringUniversityName": "StudentHub's Demo University",
+  "stringUniversityShortName": "SHDU"
 }

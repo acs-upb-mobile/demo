@@ -265,6 +265,6 @@
   "stringForum": "cs.curs.pub.ro",
   "stringAnonymous": "Anonim",
   "stringAnd": "și",
-
-  "fileAcsBanner": "assets/images/acs_banner_ro.png"
+  "stringUniversityName": "Universitatea Demo StudentHub",
+  "stringUniversityShortName": "UDSH"
 }
