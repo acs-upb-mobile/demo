@@ -1,9 +1,9 @@
-import 'package:acs_upb_mobile/pages/timetable/model/events/uni_event.dart';
-import 'package:acs_upb_mobile/pages/timetable/view/events/event_view.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:black_hole_flutter/black_hole_flutter.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/pages/timetable/model/events/uni_event.dart';
+import 'package:student_hub_demo/pages/timetable/view/events/event_view.dart';
 import 'package:timetable/timetable.dart';
 
 /// Widget to display all day events in the timetable, based on

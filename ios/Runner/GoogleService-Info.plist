@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>611150208061-ps8q2r9vg27aip7mcllltf6t9t0j9cf2.apps.googleusercontent.com</string>
+	<string>872855584999-muj7vvqa768b46fp79d67ip9qrjsv5lm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.611150208061-ps8q2r9vg27aip7mcllltf6t9t0j9cf2</string>
+	<string>com.googleusercontent.apps.872855584999-muj7vvqa768b46fp79d67ip9qrjsv5lm</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD60uXJDR9X1frDH_HR8matQYgNwpaLpf8</string>
+	<string>AIzaSyDtqgWA9BeKFPjepzy9SbCvTbEWqxaegSs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>611150208061</string>
+	<string>872855584999</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ro.pub.acs.acsUpbMobile</string>
+	<string>ro.studenthub.demo</string>
 	<key>PROJECT_ID</key>
-	<string>acs-upb-mobile</string>
+	<string>studenthub-demo</string>
 	<key>STORAGE_BUCKET</key>
-	<string>acs-upb-mobile.appspot.com</string>
+	<string>studenthub-demo.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:611150208061:ios:f9f0486d9f9000c18a1e54</string>
-	<key>DATABASE_URL</key>
-	<string>https://acs-upb-mobile.firebaseio.com</string>
+	<string>1:872855584999:ios:30b8547d6e000a04a9e242</string>
 </dict>
 </plist>

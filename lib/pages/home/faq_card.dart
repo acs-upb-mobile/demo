@@ -1,14 +1,14 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/navigation/routes.dart';
-import 'package:acs_upb_mobile/pages/faq/model/question.dart';
-import 'package:acs_upb_mobile/pages/faq/service/question_provider.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/auto_size_markdown.dart';
-import 'package:acs_upb_mobile/widgets/info_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:markdown/markdown.dart' as md;
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/navigation/routes.dart';
+import 'package:student_hub_demo/pages/faq/model/question.dart';
+import 'package:student_hub_demo/pages/faq/service/question_provider.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/auto_size_markdown.dart';
+import 'package:student_hub_demo/widgets/info_card.dart';
 
 class FaqCard extends StatelessWidget {
   @override

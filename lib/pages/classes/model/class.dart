@@ -1,6 +1,6 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
 import 'package:time_machine/time_machine.dart';
 
 enum ShortcutType { main, classbook, resource, other }

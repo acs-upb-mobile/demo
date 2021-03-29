@@ -1,25 +1,25 @@
 import 'dart:typed_data';
 import 'dart:ui';
 
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/filter/view/filter_dropdown.dart';
-import 'package:acs_upb_mobile/resources/storage/storage_provider.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/resources/validator.dart';
-import 'package:acs_upb_mobile/widgets/button.dart';
-import 'package:acs_upb_mobile/widgets/circle_image.dart';
-import 'package:acs_upb_mobile/widgets/dialog.dart';
-import 'package:acs_upb_mobile/widgets/icon_text.dart';
-import 'package:acs_upb_mobile/widgets/scaffold.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image/image.dart' as im;
 import 'package:preferences/preference_title.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/filter/view/filter_dropdown.dart';
+import 'package:student_hub_demo/resources/storage/storage_provider.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/resources/validator.dart';
+import 'package:student_hub_demo/widgets/button.dart';
+import 'package:student_hub_demo/widgets/circle_image.dart';
+import 'package:student_hub_demo/widgets/dialog.dart';
+import 'package:student_hub_demo/widgets/icon_text.dart';
+import 'package:student_hub_demo/widgets/scaffold.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 class EditProfilePage extends StatefulWidget {
   const EditProfilePage({Key key}) : super(key: key);

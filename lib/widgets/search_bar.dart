@@ -1,6 +1,6 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
 
 class SearchBar extends StatefulWidget {
   const SearchBar({this.cancel, this.textController, this.onSearch});

@@ -1,13 +1,13 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/navigation/routes.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:flutter/material.dart';
 import 'package:pedantic/pedantic.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/navigation/routes.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-export 'package:acs_upb_mobile/resources/platform.dart'
+export 'package:student_hub_demo/resources/platform.dart'
     if (dart.library.io) 'dart:io';
 
 Iterable<int> range(int low, int high) sync* {

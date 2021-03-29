@@ -1,10 +1,10 @@
-import 'package:acs_upb_mobile/pages/classes/model/class.dart';
-import 'package:acs_upb_mobile/pages/people/model/person.dart';
-import 'package:acs_upb_mobile/pages/timetable/model/events/recurring_event.dart';
-import 'package:acs_upb_mobile/pages/timetable/model/events/uni_event.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:acs_upb_mobile/pages/timetable/model/academic_calendar.dart';
 import 'package:rrule/rrule.dart';
+import 'package:student_hub_demo/pages/classes/model/class.dart';
+import 'package:student_hub_demo/pages/people/model/person.dart';
+import 'package:student_hub_demo/pages/timetable/model/academic_calendar.dart';
+import 'package:student_hub_demo/pages/timetable/model/events/recurring_event.dart';
+import 'package:student_hub_demo/pages/timetable/model/events/uni_event.dart';
 import 'package:time_machine/time_machine.dart';
 
 class ClassEvent extends RecurringUniEvent {

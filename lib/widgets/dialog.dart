@@ -1,8 +1,8 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/widgets/button.dart';
-import 'package:acs_upb_mobile/widgets/icon_text.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/widgets/button.dart';
+import 'package:student_hub_demo/widgets/icon_text.dart';
 
 class AppDialog extends StatelessWidget {
   const AppDialog(

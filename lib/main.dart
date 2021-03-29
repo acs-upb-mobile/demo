@@ -1,25 +1,3 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/authentication/view/login_view.dart';
-import 'package:acs_upb_mobile/authentication/view/sign_up_view.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/navigation/bottom_navigation_bar.dart';
-import 'package:acs_upb_mobile/navigation/routes.dart';
-import 'package:acs_upb_mobile/pages/classes/service/class_provider.dart';
-import 'package:acs_upb_mobile/pages/faq/service/question_provider.dart';
-import 'package:acs_upb_mobile/pages/faq/view/faq_page.dart';
-import 'package:acs_upb_mobile/pages/filter/service/filter_provider.dart';
-import 'package:acs_upb_mobile/pages/filter/view/filter_page.dart';
-import 'package:acs_upb_mobile/pages/news_feed/service/news_provider.dart';
-import 'package:acs_upb_mobile/pages/news_feed/view/news_feed_page.dart';
-import 'package:acs_upb_mobile/pages/people/service/person_provider.dart';
-import 'package:acs_upb_mobile/pages/portal/service/website_provider.dart';
-import 'package:acs_upb_mobile/pages/settings/service/request_provider.dart';
-import 'package:acs_upb_mobile/pages/settings/view/request_permissions.dart';
-import 'package:acs_upb_mobile/pages/settings/view/settings_page.dart';
-import 'package:acs_upb_mobile/pages/timetable/service/uni_event_provider.dart';
-import 'package:acs_upb_mobile/resources/locale_provider.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/loading_screen.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -32,6 +10,28 @@ import 'package:oktoast/oktoast.dart';
 import 'package:preferences/preferences.dart';
 import 'package:provider/provider.dart';
 import 'package:rrule/rrule.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/authentication/view/login_view.dart';
+import 'package:student_hub_demo/authentication/view/sign_up_view.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/navigation/bottom_navigation_bar.dart';
+import 'package:student_hub_demo/navigation/routes.dart';
+import 'package:student_hub_demo/pages/classes/service/class_provider.dart';
+import 'package:student_hub_demo/pages/faq/service/question_provider.dart';
+import 'package:student_hub_demo/pages/faq/view/faq_page.dart';
+import 'package:student_hub_demo/pages/filter/service/filter_provider.dart';
+import 'package:student_hub_demo/pages/filter/view/filter_page.dart';
+import 'package:student_hub_demo/pages/news_feed/service/news_provider.dart';
+import 'package:student_hub_demo/pages/news_feed/view/news_feed_page.dart';
+import 'package:student_hub_demo/pages/people/service/person_provider.dart';
+import 'package:student_hub_demo/pages/portal/service/website_provider.dart';
+import 'package:student_hub_demo/pages/settings/service/request_provider.dart';
+import 'package:student_hub_demo/pages/settings/view/request_permissions.dart';
+import 'package:student_hub_demo/pages/settings/view/settings_page.dart';
+import 'package:student_hub_demo/pages/timetable/service/uni_event_provider.dart';
+import 'package:student_hub_demo/resources/locale_provider.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/loading_screen.dart';
 import 'package:time_machine/time_machine.dart';
 
 Future<void> main() async {
@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
 
   Widget buildApp(BuildContext context, ThemeData theme) {
     return MaterialApp(
-      title: 'ACS UPB Mobile',
+      title: 'StudentHub DEMO',
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

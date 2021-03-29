@@ -1,15 +1,16 @@
 import 'dart:async';
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/filter/model/filter.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/pages/portal/model/website.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:preferences/preference_service.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/filter/model/filter.dart';
+import 'package:student_hub_demo/pages/portal/model/website.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 extension UserExtension on User {
   /// Check if there is at least one website that the [User] has permission to edit

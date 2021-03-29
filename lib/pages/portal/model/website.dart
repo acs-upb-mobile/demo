@@ -1,7 +1,7 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
 import 'package:validators/sanitizers.dart';
 
 enum WebsiteCategory { learning, administrative, association, resource, other }

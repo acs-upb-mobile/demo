@@ -1,9 +1,9 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/home/home_page.dart';
-import 'package:acs_upb_mobile/pages/people/view/people_page.dart';
-import 'package:acs_upb_mobile/pages/portal/view/portal_page.dart';
-import 'package:acs_upb_mobile/pages/timetable/view/timetable_page.dart';
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/home/home_page.dart';
+import 'package:student_hub_demo/pages/people/view/people_page.dart';
+import 'package:student_hub_demo/pages/portal/view/portal_page.dart';
+import 'package:student_hub_demo/pages/timetable/view/timetable_page.dart';
 
 class AppBottomNavigationBar extends StatefulWidget {
   const AppBottomNavigationBar({this.tabIndex = 0});

@@ -1,7 +1,7 @@
-import 'package:acs_upb_mobile/resources/locale_provider.dart';
 import 'package:meta/meta.dart';
 import 'package:rrule/src/codecs/text/l10n/l10n.dart';
 import 'package:rrule/src/frequency.dart';
+import 'package:student_hub_demo/resources/locale_provider.dart';
 import 'package:time_machine/time_machine.dart';
 
 var testCultures = {

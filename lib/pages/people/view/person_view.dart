@@ -1,9 +1,9 @@
-import 'package:acs_upb_mobile/pages/people/model/person.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/icon_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/pages/people/model/person.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/icon_text.dart';
 
 class PersonView extends StatelessWidget {
   const PersonView({Key key, this.person}) : super(key: key);

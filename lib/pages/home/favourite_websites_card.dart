@@ -1,12 +1,12 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/portal/model/website.dart';
-import 'package:acs_upb_mobile/pages/portal/service/website_provider.dart';
-import 'package:acs_upb_mobile/pages/portal/view/website_view.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/info_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/portal/model/website.dart';
+import 'package:student_hub_demo/pages/portal/service/website_provider.dart';
+import 'package:student_hub_demo/pages/portal/view/website_view.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/info_card.dart';
 
 class FavouriteWebsitesCard extends StatelessWidget {
   const FavouriteWebsitesCard({Key key, this.onShowMore}) : super(key: key);

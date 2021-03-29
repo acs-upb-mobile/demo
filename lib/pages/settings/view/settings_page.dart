@@ -1,19 +1,19 @@
 import 'dart:io';
 
-import 'package:package_info_plus/package_info_plus.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/navigation/routes.dart';
-import 'package:acs_upb_mobile/resources/custom_icons.dart';
-import 'package:acs_upb_mobile/resources/locale_provider.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/icon_text.dart';
-import 'package:acs_upb_mobile/widgets/scaffold.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:preferences/preferences.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/navigation/routes.dart';
+import 'package:student_hub_demo/resources/custom_icons.dart';
+import 'package:student_hub_demo/resources/locale_provider.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/icon_text.dart';
+import 'package:student_hub_demo/widgets/scaffold.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 import 'package:time_machine/time_machine.dart';
 
 class SettingsPage extends StatefulWidget {

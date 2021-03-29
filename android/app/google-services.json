@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "611150208061",
-    "firebase_url": "https://acs-upb-mobile.firebaseio.com",
-    "project_id": "acs-upb-mobile",
-    "storage_bucket": "acs-upb-mobile.appspot.com"
+    "project_number": "872855584999",
+    "project_id": "studenthub-demo",
+    "storage_bucket": "studenthub-demo.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:611150208061:android:9342089ff60cf2848a1e54",
+        "mobilesdk_app_id": "1:872855584999:android:627d3581c02f4948a9e242",
         "android_client_info": {
-          "package_name": "ro.pub.acs.acs_upb_mobile"
+          "package_name": "ro.studenthub.demo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "611150208061-ljqdu5mfmjisdi1h3ics3l2sirvtpljk.apps.googleusercontent.com",
+          "client_id": "872855584999-h2hlhvpd5517snj9462bo4u8d237an4d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBtmvPAyScPFOcCl0ED2OxSot1u1Hp9l2E"
+          "current_key": "AIzaSyBlJQAODfQVAflKmhncweQdGyvmQR1KfKg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "611150208061-ljqdu5mfmjisdi1h3ics3l2sirvtpljk.apps.googleusercontent.com",
+              "client_id": "872855584999-h2hlhvpd5517snj9462bo4u8d237an4d.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "611150208061-ps8q2r9vg27aip7mcllltf6t9t0j9cf2.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "ro.pub.acs.acsUpbMobile"
-              }
             }
           ]
         }

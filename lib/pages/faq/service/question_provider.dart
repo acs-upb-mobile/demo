@@ -1,8 +1,8 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/faq/model/question.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/faq/model/question.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 class QuestionProvider with ChangeNotifier {
   Future<List<Question>> fetchQuestions(

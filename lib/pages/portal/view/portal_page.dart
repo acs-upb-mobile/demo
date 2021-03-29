@@ -1,24 +1,24 @@
 import 'dart:core';
 import 'dart:math';
 
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/filter/model/filter.dart';
-import 'package:acs_upb_mobile/pages/filter/service/filter_provider.dart';
-import 'package:acs_upb_mobile/pages/filter/view/filter_page.dart';
-import 'package:acs_upb_mobile/pages/portal/model/website.dart';
-import 'package:acs_upb_mobile/pages/portal/service/website_provider.dart';
-import 'package:acs_upb_mobile/pages/portal/view/website_view.dart';
-import 'package:acs_upb_mobile/resources/custom_icons.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
-import 'package:acs_upb_mobile/widgets/circle_image.dart';
-import 'package:acs_upb_mobile/widgets/scaffold.dart';
-import 'package:acs_upb_mobile/widgets/spoiler.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:recase/recase.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/filter/model/filter.dart';
+import 'package:student_hub_demo/pages/filter/service/filter_provider.dart';
+import 'package:student_hub_demo/pages/filter/view/filter_page.dart';
+import 'package:student_hub_demo/pages/portal/model/website.dart';
+import 'package:student_hub_demo/pages/portal/service/website_provider.dart';
+import 'package:student_hub_demo/pages/portal/view/website_view.dart';
+import 'package:student_hub_demo/resources/custom_icons.dart';
+import 'package:student_hub_demo/resources/utils.dart';
+import 'package:student_hub_demo/widgets/circle_image.dart';
+import 'package:student_hub_demo/widgets/scaffold.dart';
+import 'package:student_hub_demo/widgets/spoiler.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 class PortalPage extends StatefulWidget {
   const PortalPage({Key key}) : super(key: key);

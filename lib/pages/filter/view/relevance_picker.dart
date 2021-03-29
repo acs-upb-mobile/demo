@@ -1,14 +1,14 @@
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/filter/model/filter.dart';
-import 'package:acs_upb_mobile/pages/filter/service/filter_provider.dart';
-import 'package:acs_upb_mobile/pages/filter/view/filter_page.dart';
-import 'package:acs_upb_mobile/resources/custom_icons.dart';
-import 'package:acs_upb_mobile/widgets/selectable.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/filter/model/filter.dart';
+import 'package:student_hub_demo/pages/filter/service/filter_provider.dart';
+import 'package:student_hub_demo/pages/filter/view/filter_page.dart';
+import 'package:student_hub_demo/resources/custom_icons.dart';
+import 'package:student_hub_demo/widgets/selectable.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 class RelevanceController {
   RelevanceController({this.onChanged});

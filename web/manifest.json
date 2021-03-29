@@ -1,11 +1,11 @@
 {
-    "name": "ACS UPB Mobile",
-    "short_name": "ACS Mobile",
+    "name": "StudentHub Demo",
+    "short_name": "StudentHub",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A mobile application for students at ACS UPB.",
+    "description": "A demo of the StudentHub application for a fake university.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

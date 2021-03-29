@@ -1,10 +1,10 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/filter/model/filter.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:preferences/preference_service.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/filter/model/filter.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 extension FilterNodeExtension on FilterNode {
   static FilterNode fromMap(Map<String, dynamic> map, String parentName) {

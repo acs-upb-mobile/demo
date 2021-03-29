@@ -1,22 +1,22 @@
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/main.dart';
-import 'package:acs_upb_mobile/pages/faq/model/question.dart';
-import 'package:acs_upb_mobile/pages/faq/service/question_provider.dart';
-import 'package:acs_upb_mobile/pages/news_feed/model/news_feed_item.dart';
-import 'package:acs_upb_mobile/pages/news_feed/service/news_provider.dart';
-import 'package:acs_upb_mobile/pages/portal/service/website_provider.dart';
-import 'package:acs_upb_mobile/pages/settings/service/request_provider.dart';
-import 'package:acs_upb_mobile/pages/settings/view/request_permissions.dart';
-import 'package:acs_upb_mobile/pages/settings/view/settings_page.dart';
-import 'package:acs_upb_mobile/resources/locale_provider.dart';
-import 'package:acs_upb_mobile/widgets/dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:preferences/preferences.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/main.dart';
+import 'package:student_hub_demo/pages/faq/model/question.dart';
+import 'package:student_hub_demo/pages/faq/service/question_provider.dart';
+import 'package:student_hub_demo/pages/news_feed/model/news_feed_item.dart';
+import 'package:student_hub_demo/pages/news_feed/service/news_provider.dart';
+import 'package:student_hub_demo/pages/portal/service/website_provider.dart';
+import 'package:student_hub_demo/pages/settings/service/request_provider.dart';
+import 'package:student_hub_demo/pages/settings/view/request_permissions.dart';
+import 'package:student_hub_demo/pages/settings/view/settings_page.dart';
+import 'package:student_hub_demo/resources/locale_provider.dart';
+import 'package:student_hub_demo/widgets/dialog.dart';
 
 import 'test_utils.dart';
 

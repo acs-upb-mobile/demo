@@ -1,6 +1,6 @@
-import 'package:acs_upb_mobile/pages/timetable/model/events/all_day_event.dart';
-import 'package:acs_upb_mobile/resources/utils.dart';
 import 'package:flutter/foundation.dart';
+import 'package:student_hub_demo/pages/timetable/model/events/all_day_event.dart';
+import 'package:student_hub_demo/resources/utils.dart';
 import 'package:time_machine/time_machine.dart';
 
 class AcademicCalendar {

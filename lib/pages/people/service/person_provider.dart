@@ -1,9 +1,9 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/people/model/person.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/people/model/person.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 extension PersonExtension on Person {
   static Person fromSnap(DocumentSnapshot snap) {

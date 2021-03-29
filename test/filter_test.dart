@@ -1,8 +1,8 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/pages/filter/model/filter.dart';
-import 'package:acs_upb_mobile/pages/filter/service/filter_provider.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/pages/filter/model/filter.dart';
+import 'package:student_hub_demo/pages/filter/service/filter_provider.dart';
 
 class MockAuthProvider extends Mock implements AuthProvider {}
 

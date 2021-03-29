@@ -1,5 +1,5 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
 
 class AppValidator {
   AppValidator._();

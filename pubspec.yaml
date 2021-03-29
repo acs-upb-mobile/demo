@@ -1,5 +1,5 @@
-name: acs_upb_mobile
-description: A mobile application for students at ACS UPB.
+name: student_hub_demo
+description: A demo of the StudentHub application for a fake university.
 
 # The following defines the version and build number for the application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -11,8 +11,6 @@ description: A mobile application for students at ACS UPB.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-#
-# ACS UPB Mobile uses semantic versioning. You can read more in the CONTRIBUTING.md file.
 version: 1.2.7+4
 
 environment:
@@ -244,7 +242,7 @@ flutter_icons:
   image_path: "assets/icons/acs_logo.png"
 
 flutter_launcher_name:
-  name: "ACS UPB"
+  name: "StudentHub"
 
 flutter_native_splash:
   image: assets/icons/acs_logo.png

@@ -1,15 +1,15 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:acs_upb_mobile/authentication/model/user.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/resources/storage/storage_provider.dart';
-import 'package:acs_upb_mobile/resources/validator.dart';
-import 'package:acs_upb_mobile/widgets/toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth show User;
 import 'package:flutter/material.dart';
+import 'package:student_hub_demo/authentication/model/user.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/resources/storage/storage_provider.dart';
+import 'package:student_hub_demo/resources/validator.dart';
+import 'package:student_hub_demo/widgets/toast.dart';
 
 extension DatabaseUser on User {
   static User fromSnap(DocumentSnapshot snap) {

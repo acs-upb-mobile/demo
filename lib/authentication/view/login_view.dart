@@ -1,13 +1,13 @@
-import 'package:acs_upb_mobile/authentication/service/auth_provider.dart';
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/navigation/routes.dart';
-import 'package:acs_upb_mobile/resources/banner.dart';
-import 'package:acs_upb_mobile/widgets/button.dart';
-import 'package:acs_upb_mobile/widgets/dialog.dart';
-import 'package:acs_upb_mobile/widgets/form_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:student_hub_demo/authentication/service/auth_provider.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/navigation/routes.dart';
+import 'package:student_hub_demo/resources/banner.dart';
+import 'package:student_hub_demo/widgets/button.dart';
+import 'package:student_hub_demo/widgets/dialog.dart';
+import 'package:student_hub_demo/widgets/form_card.dart';
 
 class LoginView extends StatefulWidget {
   static const String routeName = '/login';

@@ -1,9 +1,9 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/pages/people/model/person.dart';
-import 'package:acs_upb_mobile/pages/people/service/person_provider.dart';
-import 'package:acs_upb_mobile/pages/people/view/person_view.dart';
-import 'package:acs_upb_mobile/widgets/scaffold.dart';
-import 'package:acs_upb_mobile/widgets/search_bar.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/pages/people/model/person.dart';
+import 'package:student_hub_demo/pages/people/service/person_provider.dart';
+import 'package:student_hub_demo/pages/people/view/person_view.dart';
+import 'package:student_hub_demo/widgets/scaffold.dart';
+import 'package:student_hub_demo/widgets/search_bar.dart';
 import 'package:dynamic_text_highlighting/dynamic_text_highlighting.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

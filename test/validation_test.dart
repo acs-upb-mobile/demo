@@ -1,8 +1,8 @@
-import 'package:acs_upb_mobile/generated/l10n.dart';
-import 'package:acs_upb_mobile/resources/validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:student_hub_demo/generated/l10n.dart';
+import 'package:student_hub_demo/resources/validator.dart';
 
 void main() {
   Widget testLocalized(void Function(BuildContext context) body) =>
