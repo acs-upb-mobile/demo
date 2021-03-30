@@ -39,8 +39,9 @@ class _SignUpViewState extends State<SignUpView> {
   /// *Format example:* firstnameone_firstnametwo.lastname123@stud.acs.pub.ro
   void parseNameFromEmail(TextEditingController email,
       TextEditingController firstName, TextEditingController lastName) {
+    final emailWithoutDomain = email.text.split('@')[0];
     final emailWithoutNumbers =
-        email.text.replaceAll(RegExp('[^a-zA-Z._]'), '');
+        emailWithoutDomain.replaceAll(RegExp('[^a-zA-Z._]'), '');
     final names = emailWithoutNumbers.split('.');
 
     if (names.isNotEmpty) {
@@ -62,20 +63,17 @@ class _SignUpViewState extends State<SignUpView> {
     if (formItems != null) {
       return formItems;
     }
-    final emailDomain = S.of(context).stringEmailDomain;
     final authProvider = Provider.of<AuthProvider>(context, listen: false);
 
     return formItems = <FormCardField>[
       FormCardField(
         label: S.of(context).labelEmail,
         hint: S.of(context).hintEmail,
-        additionalHint: S.of(context).infoEmail(S.of(context).stringForum),
         controller: emailController,
-        suffix: emailDomain,
         autocorrect: false,
         autofillHints: [AutofillHints.newUsername],
-        check: (email, {context}) => authProvider.canSignUpWithEmail(
-            email: email + emailDomain, context: context),
+        check: (email, {context}) =>
+            authProvider.canSignUpWithEmail(email: email, context: context),
         onChanged: (_) => parseNameFromEmail(
             emailController, firstNameController, lastNameController),
       ),
@@ -171,8 +169,6 @@ class _SignUpViewState extends State<SignUpView> {
               '${S.of(context).warningAgreeTo}${S.of(context).labelPrivacyPolicy}.');
           return;
         }
-
-        fields[S.of(context).labelEmail] += S.of(context).stringEmailDomain;
 
         if (dropdownController.path != null &&
             dropdownController.path.length > 1) {

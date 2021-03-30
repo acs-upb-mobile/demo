@@ -188,8 +188,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
     final passwordController = TextEditingController();
     return AppDialog(
       title: S.of(context).actionChangeEmail,
-      message: S.of(context).messageChangeEmail(
-          emailController.text + S.of(context).stringEmailDomain),
+      message: S.of(context).messageChangeEmail(emailController.text),
       content: [
         TextFormField(
           decoration: InputDecoration(
@@ -212,8 +211,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
             if (await authProvider.verifyPassword(
                 password: passwordController.text, context: context)) {
               if (await authProvider.changeEmail(
-                  email: emailController.text + S.of(context).stringEmailDomain,
-                  context: context)) {
+                  email: emailController.text, context: context)) {
                 AppToast.show(S.of(context).messageChangeEmailSuccess);
                 Navigator.pop(context, true);
               } else {
@@ -259,7 +257,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     final authProvider = Provider.of<AuthProvider>(context);
-    final emailDomain = S.of(context).stringEmailDomain;
     final User user = authProvider.currentUserFromCache;
 
     if (user == null) {
@@ -293,7 +290,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               if (formKey.currentState.validate()) {
                 bool result = true;
                 if (isVerified == false &&
-                    emailController.text + emailDomain != authProvider.email) {
+                    emailController.text != authProvider.email) {
                   await showDialog(
                           context: context,
                           builder: _changeEmailConfirmationDialog)
@@ -376,7 +373,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         prefixIcon: const Icon(Icons.alternate_email),
                         labelText: S.of(context).labelEmail,
                         hintText: S.of(context).hintEmail,
-                        suffix: Text(emailDomain),
                       ),
                       controller: emailController,
                       validator: (value) {

@@ -151,8 +151,6 @@ void main() {
       await tester.runAsync(() async {
         expect(find.byType(LoginView), findsOneWidget);
 
-        expect(find.text('@stud.acs.upb.ro'), findsOneWidget);
-
         when(mockAuthProvider.signIn(
                 email: anyNamed('email'),
                 password: anyNamed('password'),
@@ -160,8 +158,8 @@ void main() {
             .thenAnswer((_) => Future.value(true));
 
         // Enter credentials
-        await tester.enterText(
-            find.byKey(const ValueKey('email_text_field')), 'test');
+        await tester.enterText(find.byKey(const ValueKey('email_text_field')),
+            'test@studenthub.com');
         await tester.enterText(
             find.byKey(const ValueKey('password_text_field')), 'password');
 
@@ -169,7 +167,7 @@ void main() {
         await tester.pumpAndSettle();
 
         verify(mockAuthProvider.signIn(
-            email: argThat(equals('test@stud.acs.upb.ro'), named: 'email'),
+            email: argThat(equals('test@studenthub.com'), named: 'email'),
             password: argThat(equals('password'), named: 'password'),
             context: anyNamed('context')));
         expect(find.byType(HomePage), findsOneWidget);
@@ -203,7 +201,7 @@ void main() {
       // Send email
       await tester.enterText(
           find.byKey(const ValueKey('reset_password_email_text_field')),
-          'test');
+          'test@studenthub.com');
 
       await tester.tap(find.byKey(const ValueKey('send_email_button')));
       await tester.pumpAndSettle();
@@ -211,7 +209,7 @@ void main() {
       expect(find.byType(AlertDialog), findsNothing);
 
       verify(mockAuthProvider.sendPasswordResetEmail(
-          email: argThat(equals('test@stud.acs.upb.ro'), named: 'email'),
+          email: argThat(equals('test@studenthub.com'), named: 'email'),
           context: anyNamed('context')));
     });
 
@@ -409,80 +407,15 @@ void main() {
       expect(firstName.controller.text, equals('John Alexander'));
       expect(lastName.controller.text, equals('Doe'));
 
-      await tester.enterText(email, 'john.doe');
+      await tester.enterText(email, 'john_alexander.doe123');
+      expect(firstName.controller.text, equals('John Alexander'));
+      expect(lastName.controller.text, equals('Doe'));
+
+      await tester.enterText(email, 'john.doe@studenthub.com');
       expect(firstName.controller.text, equals('John'));
       expect(lastName.controller.text, equals('Doe'));
 
-      await tester.enterText(email, '1234john.doe');
-      expect(firstName.controller.text, equals('John'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john1234.doe');
-      expect(firstName.controller.text, equals('John'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john.1234doe');
-      expect(firstName.controller.text, equals('John'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john.doe1234');
-      expect(firstName.controller.text, equals('John'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, '1234john_alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john1234_alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_1234alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander1234.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander.1234doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, '!@#%^&*()=-+john_alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john!@#%^&*()=-+_alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_!@#%^&*()=-+alexander.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander!@#%^&*()=-+.doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander.!@#%^&*()=-+doe');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander.doe!@#%^&*()=-+');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email,
-          '!@#%^&*()=-+john!@#%^&*()=-+_!@#%^&*()=-+alexander!@#%^&*()=-+.!@#%^&*()=-+1234!@#%^&*()=-+doe!@#%^&*()=-+');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'j12o##h&n_alexand@-er.do***e');
-      expect(firstName.controller.text, equals('John Alexander'));
-      expect(lastName.controller.text, equals('Doe'));
-
-      await tester.enterText(email, 'john_alexander.doe1234');
+      await tester.enterText(email, 'john_alexander.doe1234@studenthub.com');
 
       ///////////////////////
 
@@ -512,7 +445,7 @@ void main() {
       verify(mockAuthProvider.signUp(
           info: argThat(
               equals({
-                'Email': 'john_alexander.doe1234@stud.acs.upb.ro',
+                'Email': 'john_alexander.doe1234@studenthub.com',
                 'Password': 'password',
                 'Confirm password': 'password',
                 'First name': 'John Alexander',

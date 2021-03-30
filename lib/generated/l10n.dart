@@ -585,10 +585,10 @@ class S {
     );
   }
 
-  /// `john.doe`
+  /// `john.doe@studenthub.com`
   String get hintEmail {
     return Intl.message(
-      'john.doe',
+      'john.doe@studenthub.com',
       name: 'hintEmail',
       desc: '',
       args: [],
@@ -2472,26 +2472,6 @@ class S {
       name: 'infoEmail',
       desc: '',
       args: [forum],
-    );
-  }
-
-  /// `@stud.acs.upb.ro`
-  String get stringEmailDomain {
-    return Intl.message(
-      '@stud.acs.upb.ro',
-      name: 'stringEmailDomain',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `cs.curs.pub.ro`
-  String get stringForum {
-    return Intl.message(
-      'cs.curs.pub.ro',
-      name: 'stringForum',
-      desc: '',
-      args: [],
     );
   }
 

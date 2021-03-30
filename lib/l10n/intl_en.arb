@@ -58,7 +58,7 @@
   "shortcutTypeResource": "Resource",
   "shortcutTypeOther": "Other",
 
-  "hintEmail": "john.doe",
+  "hintEmail": "john.doe@studenthub.com",
   "hintPassword": "····················",
   "hintFirstName": "John",
   "hintLastName": "Doe",
@@ -260,8 +260,6 @@
   "infoAppIsOpenSource": "ACS UPB Mobile is open source.",
   "infoEmail": "This is the same username you use to log in to {forum}.",
 
-  "stringEmailDomain": "@stud.acs.upb.ro",
-  "stringForum": "cs.curs.pub.ro",
   "stringAnonymous": "Anonymous",
   "stringAnd": "and",
   "stringUniversityName": "StudentHub's Demo University",

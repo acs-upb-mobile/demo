@@ -25,19 +25,17 @@ class _LoginViewState extends State<LoginView> {
     if (formItems != null) {
       return formItems;
     }
-    final emailDomain = S.of(context).stringEmailDomain;
 
     final authProvider = Provider.of<AuthProvider>(context);
     return formItems = <FormCardField>[
       FormCardField(
         label: S.of(context).labelEmail,
         hint: S.of(context).hintEmail,
-        suffix: emailDomain,
         controller: emailController,
         autocorrect: false,
         autofillHints: [AutofillHints.username],
-        check: (email, {context}) => authProvider.canSignInWithPassword(
-            email: email + emailDomain, context: context),
+        check: (email, {context}) =>
+            authProvider.canSignInWithPassword(email: email, context: context),
       ),
       FormCardField(
         label: S.of(context).labelPassword,
@@ -62,9 +60,6 @@ class _LoginViewState extends State<LoginView> {
                       InputDecoration(hintText: S.of(context).hintEmail),
                 ),
               ),
-              const SizedBox(width: 4),
-              Text(S.of(context).stringEmailDomain,
-                  style: Theme.of(context).inputDecorationTheme.suffixStyle),
             ],
           )
         ],
@@ -77,9 +72,7 @@ class _LoginViewState extends State<LoginView> {
               final success =
                   await Provider.of<AuthProvider>(context, listen: false)
                       .sendPasswordResetEmail(
-                          email: emailController.text +
-                              S.of(context).stringEmailDomain,
-                          context: context);
+                          email: emailController.text, context: context);
               if (success) {
                 Navigator.pop(context);
               }
@@ -97,8 +90,7 @@ class _LoginViewState extends State<LoginView> {
       fields: _buildFormItems(),
       onSubmitted: (fields) async {
         final result = await authProvider.signIn(
-          email: fields[S.of(context).labelEmail] +
-              S.of(context).stringEmailDomain,
+          email: fields[S.of(context).labelEmail],
           password: fields[S.of(context).labelPassword],
           context: context,
         );

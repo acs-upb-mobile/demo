@@ -58,7 +58,7 @@
   "shortcutTypeResource": "Resursă",
   "shortcutTypeOther": "Alta",
 
-  "hintEmail": "john.doe",
+  "hintEmail": "john.doe@studenthub.ro",
   "hintPassword": "····················",
   "hintFirstName": "John",
   "hintLastName": "Doe",
@@ -261,8 +261,6 @@
   "infoAppIsOpenSource": "ACS UPB Mobile este open source.",
   "infoEmail": "Acesta este același username pe care îl folosești să te loghezi pe {forum}.",
 
-  "stringEmailDomain": "@stud.acs.upb.ro",
-  "stringForum": "cs.curs.pub.ro",
   "stringAnonymous": "Anonim",
   "stringAnd": "și",
   "stringUniversityName": "Universitatea Demo StudentHub",
